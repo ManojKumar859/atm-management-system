@@ -36,7 +36,7 @@ def m(request,atm):
         f=request.POST["k"]
         f=int(f)
         if j<=1000:
-            email=EmailMessage("the atm which is present at"+"  "+str(loc.upper())+" "+"is out of cash","the cash at this atm is very less such that it cant satisfy the user requirements so please deposit cash in it asap",settings.EMAIL_HOST_USER,["venkateshmanoj859@gmail.com"],)
+            email=EmailMessage("the atm which is present at"+"  "+str(loc.upper())+" "+"is out of cash","the cash at this atm is very less such that it cant satisfy the user requirements so please deposit cash in it asap",settings.EMAIL_HOST_USER,["enter admin mail here"],)
             email.fail_silently=False
             email.send()
         if (f > g):
