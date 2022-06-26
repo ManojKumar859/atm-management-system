@@ -1,0 +1,8 @@
+<h1>hello {{request.user}}</h1>
+<h1>your in {{loc}} atm</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" id="j" name="k">
+    <input type="submit">
+    <a href="/home">back</a>
+</form>
